@@ -7,20 +7,20 @@ The ETL (Extract, Transform, Load) mini project is designed to provide hands-on 
 
 
 ## Table of Contents
-[Installation](#installation)
-[Roadmap](#roadmap)
-1. [Project Setup](#Project_Setup)
-2. [Data Extraction and Transformation](#Data_Extraction_and_Transformation)
-- [Create Category and Subcategory DataFrames](#Create_Category_and_Subcategory_DataFrames)
-- [Create Campaign DataFrame](Create_Campaign_DataFrame)
-- [Create Contacts DataFrame](Create_Contacts_DataFrame)
-3. [Database Schema and Table Creation](Database_Schema_and_Table_Creation)
-- [Design ERD and Table Schemas](Design_ERD_and_Table_Schemas)
-- [Create PostgreSQL Database and Tables](Create_PostgreSQL_Database_and_Tables)
-4. [Data Import and Verification](Data_Import_and_Verification)
-- [Import Data and Verify](Import_Data_and_Verify)
-5. [Final Review and Submission](Final_Review_and_Submission)
-[Acknowledgements](#acknowledgements)
+- [Installation](#installation)
+- [Roadmap](#roadmap)
+    - [Project Setup](#project-setup)
+    - [Data Extraction and Transformation](#data-extraction-and-transformation)
+        - [Create Category and Subcategory DataFrames](#create-category-and-subcategory-dataframes)
+        - [Create Campaign DataFrame](#create-campaign-dataframe)
+        - [Create Contacts DataFrame](#create-contacts-dataframe)
+    - [Database Schema and Table Creation](#database-schema-and-table-creation)
+        - [Design ERD and Table Schemas](#design-erd-and-table-schemas)
+        - [Create PostgreSQL Database and Tables](#create-postgresql-database-and-tables)
+    - [Data Import and Verification](#data-import-and-verification)
+        - [Import Data and Verify](#import-data-and-verify)
+    - [Final Review and Submission](#final-review-and-submission)
+- [Acknowledgements](#acknowledgements)
 
 
 ## Author
@@ -37,9 +37,7 @@ from datetime import datetime as dt
 pd.set_option('max_colwidth', 400)
 ```
     
-# Roadmap
-
-## Roadmap for the ETL Mini Project
+## Roadmap
 
 ### Project Setup
    - **Repository Creation**
@@ -51,7 +49,7 @@ pd.set_option('max_colwidth', 400)
 ---
 
 ### Data Extraction and Transformation
-   - **Create Category and Subcategory DataFrames**
+   - #### Create Category and Subcategory DataFrames
      - Extract and transform the data from `crowdfunding.xlsx` to create a `category` DataFrame.
      - Ensure the `category` DataFrame has `category_id` and `category` columns.
      - Export the `category` DataFrame as `category.csv` and save it to the repository.
@@ -110,7 +108,7 @@ category_df.to_csv("Resources/category.csv", index=False)
 subcategory_df.to_csv("Resources/subcategory.csv", index=False)
 ```
 ---
-   - **Create Campaign DataFrame**
+   - #### Create Campaign DataFrame
      - Extract and transform the data from `crowdfunding.xlsx` to create a `campaign` DataFrame.
      - Ensure the `campaign` DataFrame includes necessary columns such as `cf_id`, `contact_id`, `company_name`, `description`, `goal`, `pledged`, `outcome`, `backers_count`, `country`, `currency`, `launch_date`, `end_date`, `category_id`, and `subcategory_id`.
      - Export the `campaign` DataFrame as `campaign.csv` and save it to the repository.
@@ -157,7 +155,7 @@ Export the DataFrame as a CSV file.
 clean_mer_campdf.to_csv("Resources/campaign.csv", index=False)
 ```
 ---
-   - **Create Contacts DataFrame**
+   - #### Create Contacts DataFrame
      - Choose either Python dictionary methods or regular expressions to extract and transform data from `contacts.xlsx`.
      - Create a `contacts` DataFrame with `contact_id`, `name`, and `email` columns.
      - Split the `name` column into `first_name` and `last_name`.
@@ -213,18 +211,18 @@ clean_contacts.to_csv("Resources/contacts.csv", encoding='utf8', index=False)
 ```
 
 ### Database Schema and Table Creation
-   - **Design ERD and Table Schemas**
+   - #### Design ERD and Table Schemas
      - Inspect the four CSV files and sketch an Entity-Relationship Diagram (ERD) using QuickDBD.
      - Use the ERD to create a table schema for each CSV file, specifying data types, primary keys, foreign keys, and constraints.
      - Save the database schema as `crowdfunding_db_schema.sql` and add it to the repository.
 
-   - **Create PostgreSQL Database and Tables**
+   - #### Create PostgreSQL Database and Tables
      - Create a new PostgreSQL database named `crowdfunding_db`.
      - Use the `crowdfunding_db_schema.sql` file to create tables in the database, ensuring the correct order to handle foreign keys.
      - Verify the creation of each table by running SELECT statements.
 
 ### Data Import and Verification
-   - **Import Data and Verify**
+   - #### Import Data and Verify
      - Import each CSV file (`category.csv`, `subcategory.csv`, `campaign.csv`, `contacts.csv`) into its corresponding SQL table.
      - Verify that each table has the correct data by running SELECT statements for each table.
 
@@ -287,8 +285,8 @@ REFERENCES "Contacts" ("subcategory_id");
      - Coordinate with your partner to ensure both have the final version on your local machines.
 ## Acknowledgements
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+- [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [Awesome README](https://github.com/matiassingers/awesome-readme)
+- [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 - [Thay Chansy](https://github.com/thaychansy)
 - [Nate Sheibley](https://github.com/Nate-Sheibley)
