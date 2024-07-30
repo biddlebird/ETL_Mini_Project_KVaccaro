@@ -7,20 +7,20 @@ The ETL (Extract, Transform, Load) mini project is designed to provide hands-on 
 
 
 ## Table of Contents
-1. [Installation](#installation)
-2. [Roadmap](#roadmap)
-- [Project Setup](#Project_Setup)
-- [Data Extraction and Transformation](#Data_Extraction_and_Transformation)
-    - [Create Category and Subcategory DataFrames](#Create_Category_and_Subcategory_DataFrames)
-    - [Create Campaign DataFrame](Create_Campaign_DataFrame)
-    - [Create Contacts DataFrame](Create_Contacts_DataFrame)
-- [Database Schema and Table Creation](Database_Schema_and_Table_Creation)
-    - [Design ERD and Table Schemas](Design_ERD_and_Table_Schemas)
-    - [Create PostgreSQL Database and Tables](Create_PostgreSQL_Database_and_Tables)
-- [Data Import and Verification](Data_Import_and_Verification)
-    - [Import Data and Verify](Import_Data_and_Verify)
-- [Final Review and Submission](Final_Review_and_Submission)
-3. [Acknowledgements](#acknowledgements)
+[Installation](#installation)
+[Roadmap](#roadmap)
+1. [Project Setup](#Project_Setup)
+2. [Data Extraction and Transformation](#Data_Extraction_and_Transformation)
+- [Create Category and Subcategory DataFrames](#Create_Category_and_Subcategory_DataFrames)
+- [Create Campaign DataFrame](Create_Campaign_DataFrame)
+- [Create Contacts DataFrame](Create_Contacts_DataFrame)
+3. [Database Schema and Table Creation](Database_Schema_and_Table_Creation)
+- [Design ERD and Table Schemas](Design_ERD_and_Table_Schemas)
+- [Create PostgreSQL Database and Tables](Create_PostgreSQL_Database_and_Tables)
+4. [Data Import and Verification](Data_Import_and_Verification)
+- [Import Data and Verify](Import_Data_and_Verify)
+5. [Final Review and Submission](Final_Review_and_Submission)
+[Acknowledgements](#acknowledgements)
 
 
 ## Author
